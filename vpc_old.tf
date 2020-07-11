@@ -101,7 +101,7 @@ resource "aws_instance" "mysql" {
   ami           = "ami-0019ac6129392a0f2"
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.private.id}"
-  vpc_security_group_ids = ["${aws_security_group.mysqlsecurity.id}"]
+  vpc_security_group_ids = ["${aws_security_group.mywebsecurity.id}"]
   key_name = "mynewkey"
   availability_zone = "ap-south-1b"
 
